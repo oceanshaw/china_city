@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_haoyi_city,access_haoyi_city,model_haoyi_city,,1,0,0,0
+access_haoyi_district,access_haoyi_district,model_haoyi_district,,1,0,0,0
+access_haoyi_region,access_haoyi_region,model_haoyi_region,,1,0,0,0

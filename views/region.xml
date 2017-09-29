@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<data>
+			<record model="ir.ui.view" id="haoyi_region_form">
+					<field name="name">haoyi.region.form</field>
+					<field name="model">haoyi.region</field>
+					<field name="type">form</field>
+					<field name="arch" type="xml">
+							<form string="District Import">
+								<group name="main">
+									<field name="xls" />
+								  </group>
+								<footer>
+									<button name="import_xls" type="object"
+											string="Import" class="oe_highlight"/>
+									<button special="cancel" string="Cancel"/>
+								  </footer>
+
+							</form>
+					</field>
+			</record>
+			 <record id="action_haoyi_region" model="ir.actions.act_window">
+				<field name="name">District Import</field>
+				<field name="res_model">haoyi.region</field>
+				<field name="view_mode">form</field>
+				<field name="target">new</field>
+			</record>
+			<menuitem id="menu_haoyi_region" name="District Import" action="action_haoyi_region" parent="base.menu_administration"/>
+		</data>
+</odoo>
